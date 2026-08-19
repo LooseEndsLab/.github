@@ -1,31 +1,21 @@
 # Loose Ends
 
-Small, open-source tools for the things you keep meaning to get back to: follow-ups, reminders, recurring life admin, and the little workflow annoyances that stay in the back of your mind.
+<p align="center">
+  <img src="./assets/loose-ends-logo.png" alt="Loose Ends logo" width="160" />
+</p>
 
-## Why it exists
+<p align="center">
+  <strong>Lightweight productivity tools for tying up the loose ends in your digital life.</strong>
+</p>
 
-Not every problem needs a sprawling system. Loose Ends is a personal collection of focused tools that make everyday digital chores easier to notice, finish, and forget.
+Loose Ends is a small, open-source collection for follow-ups, reminders, recurring life admin, and the other little things that stay in the back of your mind.
 
-## What to expect
+## The idea
 
-- Small tools with a clear job
-- Lightweight setup and a low-maintenance approach
-- Thoughtful handling of personal data
-- Practical help for real, repetitive loose ends
+Useful tools with a clear job: help you notice it, take care of it, and move on.
 
 ## In progress
 
-The collection is still taking shape. The first tools will focus on surfacing conversations and tasks that need a follow-up.
+The collection is taking shape, starting with tools for surfacing conversations and tasks that need a follow-up.
 
 TODO: Add links here as individual tool repositories are published.
-
-## Principles
-
-- Do one thing well.
-- Reduce mental overhead.
-- Be useful immediately.
-- Keep personal data personal.
-
----
-
-*Made for all the things you meant to get back to.*
