@@ -12,16 +12,16 @@
 
 <!-- repository-cards:start -->
 <br />
-<a href="https://github.com/LooseEndsLab/Bump-Replies" target="_blank" rel="noopener noreferrer">
-  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Bump-Replies" alt="Bump-Replies repository card" />
+<a href="https://github.com/LooseEndsLab/Bump-Replies">
+  <img width="46%" src="./assets/repository-cards/Bump-Replies.svg" alt="Bump-Replies repository card" />
 </a>
 &nbsp;
-<a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI" target="_blank" rel="noopener noreferrer">
-  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Enhanced-Outlook-UI" alt="Enhanced-Outlook-UI repository card" />
+<a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
+  <img width="46%" src="./assets/repository-cards/Enhanced-Outlook-UI.svg" alt="Enhanced-Outlook-UI repository card" />
 </a>
 <br />
-<a href="https://github.com/LooseEndsLab/Unformat" target="_blank" rel="noopener noreferrer">
-  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Unformat" alt="Unformat repository card" />
+<a href="https://github.com/LooseEndsLab/Unformat">
+  <img width="46%" src="./assets/repository-cards/Unformat.svg" alt="Unformat repository card" />
 </a>
 <br />
 <br />
