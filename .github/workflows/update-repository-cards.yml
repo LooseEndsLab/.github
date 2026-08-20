@@ -44,7 +44,7 @@ jobs:
             const cards = projectRepositories
               .map((repository, index) => {
                 const card = [
-                  `<a href="${repository.html_url}">`,
+                  `<a href="${repository.html_url}" target="_blank" rel="noopener noreferrer">`,
                   `  <img width="49%" src="https://opengraph.githubassets.com/1/${encodeURIComponent(owner)}/${encodeURIComponent(repository.name)}" alt="${repository.name} repository card" />`,
                   "</a>",
                 ].join("\n");
@@ -55,7 +55,7 @@ jobs:
               })
               .join("\n");
 
-            const replacement = `${start}\n${cards || "No public repositories yet."}\n<br />\n${end}`;
+            const replacement = `${start}\n<br />\n${cards || "No public repositories yet."}\n<br />\n<br />\n${end}`;
             const current = await github.rest.repos.getContent({ owner, repo, path });
 
             if (Array.isArray(current.data) || current.data.type !== "file") {

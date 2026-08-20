@@ -14,17 +14,19 @@ Built to make follow-ups, reminders, and recurring life admin easier to manage.
 ## Tools
 
 <!-- repository-cards:start -->
-<a href="https://github.com/LooseEndsLab/Bump-Replies">
+<br />
+<a href="https://github.com/LooseEndsLab/Bump-Replies" target="_blank" rel="noopener noreferrer">
   <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Bump-Replies" alt="Bump-Replies repository card" />
 </a>
 &nbsp;
-<a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
+<a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI" target="_blank" rel="noopener noreferrer">
   <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Enhanced-Outlook-UI" alt="Enhanced-Outlook-UI repository card" />
 </a>
 <br />
-<a href="https://github.com/LooseEndsLab/Unformat">
+<a href="https://github.com/LooseEndsLab/Unformat" target="_blank" rel="noopener noreferrer">
   <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Unformat" alt="Unformat repository card" />
 </a>
+<br />
 <br />
 <!-- repository-cards:end -->
 
