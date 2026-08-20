@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <strong>Lightweight productivity tools for tying up the loose ends in your digital life.</strong>
+  <strong>Open-source tools for follow-ups, reminders, and everyday admin.</strong>
 </p>
 
 <p align="center">
-  Practical, open-source software for keeping everyday follow-ups, reminders, and loose ends from slipping through the cracks.
+  Each project focuses on a specific workflow and can be used independently.
 </p>
 
 <h1 align="center">Tools</h1>
@@ -31,8 +31,8 @@
 <br />
 <!-- repository-cards:end -->
 
-## Made for the things that linger
+## About the collection
 
-Loose Ends is a growing software suite for the small responsibilities that do not fit neatly into a calendar or task list: following up on a conversation, returning to an unfinished thought, or cleaning up the text you need to use next.
+Loose Ends is a set of small software projects for tasks that need to be tracked, revisited, or cleaned up. Projects are maintained independently and appear above as they are published.
 
-Each tool is designed to be useful on its own while sharing the same goal: make recurring life admin feel lighter and more manageable. Explore a project above, try it out, or help shape what comes next.
+Use the cards above to view source code, current project details, and any available live apps.
