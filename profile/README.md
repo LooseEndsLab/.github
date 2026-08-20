@@ -8,7 +8,7 @@
   <strong>Lightweight productivity tools for tying up the loose ends in your digital life.</strong>
 </p>
 
-## Tools
+<h1 align="center">Tools</h1>
 
 <!-- repository-cards:start -->
 <br />
