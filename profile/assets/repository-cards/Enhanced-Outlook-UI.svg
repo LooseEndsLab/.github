@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="330" viewBox="0 0 720 330" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="345" viewBox="0 0 720 345" role="img" aria-labelledby="title description">
   <title id="title">Enhanced-Outlook-UI</title>
   <desc id="description">A lightweight productivity tool from Loose Ends.</desc>
-  <style>.eyebrow { fill: #ffffff; font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 21px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
-  <rect x="1" y="1" width="718" height="328" rx="24" fill="#ffffff" stroke="#d0d7de"/>
+  <style>.eyebrow { fill: #ffffff; font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 35px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
+  <rect x="1" y="1" width="718" height="343" rx="24" fill="#ffffff" stroke="#d0d7de"/>
   <rect x="36" y="28" width="170" height="28" rx="14" fill="#f1e05a"/>
   <text x="51" y="47" class="eyebrow">OPEN-SOURCE TOOL</text>
-  <text x="36" y="92" class="title">Enhanced-Outlook-UI</text>
-  <text x="36" y="139" class="description">A lightweight productivity tool from Loose Ends.</text>
+  <text x="36" y="96" class="title">Enhanced-Outlook-UI</text>
+  <text x="36" y="144" class="description">A lightweight productivity tool from Loose Ends.</text>
   
-  <line x1="36" y1="225" x2="684" y2="225" stroke="#d8dee4"/>
-  <circle cx="44" cy="258" r="8" fill="#f1e05a"/>
-  <text x="61" y="252" class="meta-label">PRIMARY LANGUAGE</text>
-  <text x="61" y="277" class="meta-value">JavaScript</text>
-  <text x="270" y="252" class="meta-label">COMMUNITY</text>
-  <text x="270" y="277" class="meta-value">★ 1   Forks 0</text>
-  <text x="480" y="252" class="meta-label">PROJECT PULSE</text>
-  <text x="480" y="277" class="meta-value">0 issues · 3 languages</text>
-  <text x="684" y="304" text-anchor="end" class="meta-label">UPDATED AUG 19 · SINCE 2026</text>
-  <clipPath id="language-bar"><rect x="1" y="320" width="718" height="9" rx="5"/></clipPath>
-  <g clip-path="url(#language-bar)"><rect x="1" y="320" width="472" height="9" fill="#f1e05a"/><rect x="473" y="320" width="179" height="9" fill="#663399"/><rect x="652" y="320" width="67" height="9" fill="#e34c26"/></g>
+  <line x1="36" y1="240" x2="684" y2="240" stroke="#d8dee4"/>
+  <circle cx="45" cy="275" r="9" fill="#f1e05a"/>
+  <text x="64" y="267" class="meta-label">PRIMARY LANGUAGE</text>
+  <text x="64" y="294" class="meta-value">JavaScript</text>
+  <text x="275" y="267" class="meta-label">COMMUNITY</text>
+  <text x="275" y="294" class="meta-value">★ 1   Forks 0</text>
+  <text x="485" y="267" class="meta-label">PROJECT PULSE</text>
+  <text x="485" y="294" class="meta-value">0 issues · 3 languages</text>
+  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED AUG 19 · SINCE 2026</text>
+  <clipPath id="language-bar"><rect x="1" y="335" width="718" height="9" rx="5"/></clipPath>
+  <g clip-path="url(#language-bar)"><rect x="1" y="335" width="472" height="9" fill="#f1e05a"/><rect x="473" y="335" width="179" height="9" fill="#663399"/><rect x="652" y="335" width="67" height="9" fill="#e34c26"/></g>
 </svg>
