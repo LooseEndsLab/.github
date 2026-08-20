@@ -8,7 +8,7 @@
   <strong>Lightweight productivity tools for tying up the loose ends in your digital life.</strong>
 </p>
 
-Loose Ends is a small, open-source collection for follow-ups, reminders, recurring life admin, and the other little things that stay in the back of your mind.
+Loose Ends is a small, open-source software suite for follow-ups, reminders, recurring life admin, and the other little tasks that stay in the back of your mind.
 
 
 ## Tools
