@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Small, focused open-source projects for the things worth remembering, revisiting, and getting out of your head.
+  Practical, open-source software for keeping everyday follow-ups, reminders, and loose ends from slipping through the cracks.
 </p>
 
 <h1 align="center">Tools</h1>
