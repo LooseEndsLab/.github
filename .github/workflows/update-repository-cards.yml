@@ -24,8 +24,85 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const path = "profile/README.md";
+            const cardsDirectory = "profile/assets/repository-cards";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
+
+            const escapeXml = (value) => String(value)
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&apos;");
+
+            const wrapText = (value, maxLength, maxLines) => {
+              const words = value.trim().split(/\s+/);
+              const lines = [];
+              let line = "";
+
+              for (const word of words) {
+                const candidate = line ? `${line} ${word}` : word;
+                if (candidate.length <= maxLength || !line) {
+                  line = candidate;
+                  continue;
+                }
+
+                lines.push(line);
+                line = word;
+                if (lines.length === maxLines) break;
+              }
+
+              if (lines.length < maxLines && line) lines.push(line);
+              const truncated = words.join(" ").length > lines.join(" ").length;
+              if (truncated) lines[lines.length - 1] = `${lines.at(-1).replace(/[.,;:!?]?$/, "")}…`;
+              return lines;
+            };
+
+            const cardFilename = (name) => `${name.replace(/[^a-zA-Z0-9._-]/g, "-")}.svg`;
+            const updatedDate = (date) => new Intl.DateTimeFormat("en-US", {
+              month: "short",
+              day: "numeric",
+              timeZone: "UTC",
+            }).format(new Date(date));
+
+            const renderCard = (repository) => {
+              const title = wrapText(repository.name, 30, 2);
+              const description = wrapText(
+                repository.description || "A lightweight productivity tool from Loose Ends.",
+                52,
+                2,
+              );
+              const descriptionY = title.length === 2 ? 116 : 82;
+              const descriptionLines = description.map(
+                (line, index) => `<text x="32" y="${descriptionY + index * 24}" class="description">${escapeXml(line)}</text>`,
+              ).join("");
+              const titleLines = title.map(
+                (line, index) => `<text x="32" y="${48 + index * 32}" class="title">${escapeXml(line)}</text>`,
+              ).join("");
+              const homepage = repository.homepage
+                ? `<text x="608" y="${descriptionY + 24}" text-anchor="end" class="homepage">Live app ↗</text>`
+                : "";
+
+              return [
+                `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="250" viewBox="0 0 640 250" role="img" aria-labelledby="title description">`,
+                `  <title id="title">${escapeXml(repository.name)}</title>`,
+                `  <desc id="description">${escapeXml(repository.description || "A lightweight productivity tool from Loose Ends.")}</desc>`,
+                "  <style>.title { fill: #1f2328; font: 700 26px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .description { fill: #57606a; font: 17px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .meta { fill: #57606a; font: 15px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .homepage { fill: #0969da; font: 600 14px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }</style>",
+                "  <rect x=\"1\" y=\"1\" width=\"638\" height=\"248\" rx=\"16\" fill=\"#ffffff\" stroke=\"#d0d7de\"/>",
+                "  <rect x=\"1\" y=\"1\" width=\"638\" height=\"6\" rx=\"3\" fill=\"#0969da\"/>",
+                `  ${titleLines}`,
+                `  ${descriptionLines}`,
+                `  ${homepage}`,
+                "  <line x1=\"32\" y1=\"188\" x2=\"608\" y2=\"188\" stroke=\"#d8dee4\"/>",
+                "  <circle cx=\"39\" cy=\"216\" r=\"6\" fill=\"#0969da\"/>",
+                `  <text x="53" y="221" class="meta">${escapeXml(repository.language || "Code")}</text>`,
+                `  <text x="215" y="221" class="meta">★ ${repository.stargazers_count}</text>`,
+                `  <text x="302" y="221" class="meta">Forks ${repository.forks_count}</text>`,
+                `  <text x="410" y="221" class="meta">Issues ${repository.open_issues_count}</text>`,
+                `  <text x="608" y="221" text-anchor="end" class="meta">Updated ${updatedDate(repository.updated_at)}</text>`,
+                "</svg>",
+              ].join("\n");
+            };
 
             const repositories = await github.paginate(
               github.rest.repos.listForOrg,
@@ -44,8 +121,8 @@ jobs:
             const cards = projectRepositories
               .map((repository, index) => {
                 const card = [
-                  `<a href="${repository.html_url}" target="_blank" rel="noopener noreferrer">`,
-                  `  <img width="49%" src="https://opengraph.githubassets.com/1/${encodeURIComponent(owner)}/${encodeURIComponent(repository.name)}" alt="${repository.name} repository card" />`,
+                  `<a href="${repository.html_url}">`,
+                  `  <img width="46%" src="./assets/repository-cards/${cardFilename(repository.name)}" alt="${repository.name} repository card" />`,
                   "</a>",
                 ].join("\n");
 
@@ -73,16 +150,81 @@ jobs:
 
             const updated = readme.replace(expression, replacement);
 
-            if (updated === readme) {
+            const cardContents = new Map(
+              projectRepositories.map((repository) => [
+                `${cardsDirectory}/${cardFilename(repository.name)}`,
+                renderCard(repository),
+              ]),
+            );
+            let existingCards = [];
+
+            try {
+              const directory = await github.rest.repos.getContent({
+                owner,
+                repo,
+                path: cardsDirectory,
+              });
+              existingCards = Array.isArray(directory.data) ? directory.data : [];
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+
+            const updates = [];
+            for (const [cardPath, content] of cardContents) {
+              const existing = existingCards.find((file) => file.path === cardPath);
+              if (!existing) {
+                updates.push({ path: cardPath, mode: "100644", type: "blob", content });
+                continue;
+              }
+
+              const file = await github.rest.repos.getContent({ owner, repo, path: cardPath });
+              const existingContent = Buffer.from(file.data.content, "base64").toString("utf8");
+              if (existingContent !== content) {
+                updates.push({ path: cardPath, mode: "100644", type: "blob", content });
+              }
+            }
+
+            for (const existing of existingCards) {
+              if (!cardContents.has(existing.path)) {
+                updates.push({ path: existing.path, mode: "100644", type: "blob", sha: null });
+              }
+            }
+
+            if (updated !== readme) {
+              updates.push({ path, mode: "100644", type: "blob", content: updated });
+            }
+
+            if (updates.length === 0) {
               core.info("Repository cards are already up to date.");
               return;
             }
 
-            await github.rest.repos.createOrUpdateFileContents({
+            const reference = await github.rest.git.getRef({
               owner,
               repo,
-              path,
+              ref: `heads/${context.ref.replace("refs/heads/", "")}`,
+            });
+            const baseCommit = await github.rest.git.getCommit({
+              owner,
+              repo,
+              commit_sha: reference.data.object.sha,
+            });
+            const tree = await github.rest.git.createTree({
+              owner,
+              repo,
+              base_tree: baseCommit.data.tree.sha,
+              tree: updates,
+            });
+            const commit = await github.rest.git.createCommit({
+              owner,
+              repo,
               message: "chore: update repository cards",
-              content: Buffer.from(updated).toString("base64"),
-              sha: current.data.sha,
+              tree: tree.data.sha,
+              parents: [reference.data.object.sha],
+            });
+            await github.rest.git.updateRef({
+              owner,
+              repo,
+              ref: `heads/${context.ref.replace("refs/heads/", "")}`,
+              sha: commit.data.sha,
             });
