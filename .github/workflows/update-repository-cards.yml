@@ -55,7 +55,7 @@ jobs:
               })
               .join("\n");
 
-            const replacement = `${start}\n${cards || "No public repositories yet."}\n${end}`;
+            const replacement = `${start}\n${cards || "No public repositories yet."}\n<br />\n${end}`;
             const current = await github.rest.repos.getContent({ owner, repo, path });
 
             if (Array.isArray(current.data) || current.data.type !== "file") {

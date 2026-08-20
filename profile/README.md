@@ -25,6 +25,7 @@ Built to make follow-ups, reminders, and recurring life admin easier to manage.
 <a href="https://github.com/LooseEndsLab/Unformat">
   <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Unformat" alt="Unformat repository card" />
 </a>
+<br />
 <!-- repository-cards:end -->
 
 The collection is taking shape, starting with tools for surfacing conversations and tasks that need a follow-up. This section refreshes daily as repositories are published.
