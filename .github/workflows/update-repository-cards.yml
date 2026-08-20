@@ -25,7 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
-            const cardVersion = "7";
+            const cardVersion = "8";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
@@ -77,7 +77,6 @@ jobs:
               day: "numeric",
               timeZone: "UTC",
             }).format(new Date(date));
-            const createdYear = (date) => new Date(date).getUTCFullYear();
 
             const renderCard = (repository) => {
               const languages = Object.entries(repository.languages || {})
@@ -126,11 +125,11 @@ jobs:
                 `  <circle cx="45" cy="275" r="9" fill="${accent}"/>`,
                 `  <text x="64" y="267" class="meta-label">PRIMARY LANGUAGE</text>`,
                 `  <text x="64" y="294" class="meta-value">${escapeXml(primaryLanguage)}</text>`,
-                `  <text x="275" y="267" class="meta-label">COMMUNITY</text>`,
-                `  <text x="275" y="294" class="meta-value">★ ${repository.stargazers_count}   Forks ${repository.forks_count}</text>`,
+                `  <text x="275" y="267" class="meta-label">STARS</text>`,
+                `  <text x="275" y="294" class="meta-value">★ ${repository.stargazers_count}</text>`,
                 `  <text x="485" y="267" class="meta-label">PROJECT PULSE</text>`,
                 `  <text x="485" y="294" class="meta-value">${repository.open_issues_count} open issues</text>`,
-                `  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED ${updatedDate(repository.updated_at).toUpperCase()} · SINCE ${createdYear(repository.created_at)}</text>`,
+                `  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED ${updatedDate(repository.updated_at).toUpperCase()}</text>`,
                 "  <clipPath id=\"language-bar\"><rect x=\"1\" y=\"335\" width=\"718\" height=\"9\" rx=\"5\"/></clipPath>",
                 `  <g clip-path="url(#language-bar)">${languageBar}</g>`,
                 "</svg>",
