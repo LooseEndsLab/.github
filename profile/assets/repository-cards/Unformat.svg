@@ -1,19 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="250" viewBox="0 0 640 250" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="310" viewBox="0 0 720 310" role="img" aria-labelledby="title description">
   <title id="title">Unformat</title>
   <desc id="description">Clean copy/paste artifacts into useful plain text.</desc>
-  <style>.title { fill: #1f2328; font: 700 26px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #57606a; font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta { fill: #57606a; font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
-  <rect x="1" y="1" width="638" height="248" rx="16" fill="#ffffff" stroke="#d0d7de"/>
-  <path d="M17 1h606a16 16 0 0 1 16 16v53H1V17A16 16 0 0 1 17 1Z" fill="#f1e05a" opacity="0.12"/>
-  <text x="32" y="48" class="title">Unformat</text>
-  <text x="32" y="82" class="description">Clean copy/paste artifacts into useful plain text.</text>
-  <text x="608" y="106" text-anchor="end" class="homepage">Live app ↗</text>
-  <line x1="32" y1="188" x2="608" y2="188" stroke="#d8dee4"/>
-  <circle cx="39" cy="216" r="6" fill="#f1e05a"/>
-  <text x="53" y="221" class="meta">JavaScript</text>
-  <text x="215" y="221" class="meta">★ 1</text>
-  <text x="302" y="221" class="meta">Forks 0</text>
-  <text x="410" y="221" class="meta">Issues 0</text>
-  <text x="608" y="221" text-anchor="end" class="meta">Updated Aug 19</text>
-  <clipPath id="language-bar"><rect x="1" y="242" width="638" height="7" rx="3"/></clipPath>
-  <g clip-path="url(#language-bar)"><rect x="1" y="242" width="510" height="7" fill="#f1e05a"/><rect x="511" y="242" width="128" height="7" fill="#e34c26"/></g>
+  <style>.eyebrow { fill: #57606a; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.2px; } .title { fill: #1f2328; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #3d444d; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #6e7781; font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
+  <rect x="1" y="1" width="718" height="308" rx="18" fill="#ffffff" stroke="#d0d7de"/>
+  <path d="M18 1h684a18 18 0 0 1 18 18v76H1V19A18 18 0 0 1 18 1Z" fill="#f1e05a" opacity="0.20"/>
+  <rect x="1" y="1" width="718" height="8" rx="4" fill="#f1e05a"/>
+  <text x="36" y="34" class="eyebrow">OPEN-SOURCE TOOL</text>
+  <text x="36" y="64" class="title">Unformat</text>
+  <text x="36" y="104" class="description">Clean copy/paste artifacts into useful plain text.</text>
+  <text x="684" y="131" text-anchor="end" class="homepage">Live app ↗</text>
+  <line x1="36" y1="205" x2="684" y2="205" stroke="#d8dee4"/>
+  <circle cx="43" cy="237" r="7" fill="#f1e05a"/>
+  <text x="58" y="233" class="meta-label">PRIMARY LANGUAGE</text>
+  <text x="58" y="254" class="meta-value">JavaScript</text>
+  <text x="264" y="233" class="meta-label">COMMUNITY</text>
+  <text x="264" y="254" class="meta-value">★ 1   Forks 0</text>
+  <text x="477" y="233" class="meta-label">PROJECT PULSE</text>
+  <text x="477" y="254" class="meta-value">0 issues · 2 languages</text>
+  <text x="684" y="281" text-anchor="end" class="meta-label">UPDATED AUG 19 · SINCE 2026</text>
+  <clipPath id="language-bar"><rect x="1" y="300" width="718" height="9" rx="4"/></clipPath>
+  <g clip-path="url(#language-bar)"><rect x="1" y="300" width="574" height="9" fill="#f1e05a"/><rect x="575" y="300" width="144" height="9" fill="#e34c26"/></g>
 </svg>
