@@ -25,7 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
-            const cardVersion = "9";
+            const cardVersion = "10";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
@@ -90,47 +90,47 @@ jobs:
                   const width = index === languages.length - 1
                     ? 719 - offset
                     : Math.round((bytes / totalBytes) * 718);
-                  const segment = `<rect x="${offset}" y="355" width="${width}" height="9" fill="${languageColor(language)}"/>`;
+                  const segment = `<rect x="${offset}" y="375" width="${width}" height="9" fill="${languageColor(language)}"/>`;
                   offset += width;
                   return segment;
                 }).join("")
-                : `<rect x="1" y="355" width="718" height="9" fill="${accent}"/>`;
+                : `<rect x="1" y="375" width="718" height="9" fill="${accent}"/>`;
               const title = wrapText(repository.name, 32, 2);
               const description = wrapText(
                 repository.description || "A lightweight productivity tool from Loose Ends.",
                 56,
                 2,
               );
-              const descriptionY = title.length === 2 ? 162 : 116;
+              const descriptionY = title.length === 2 ? 176 : 126;
               const descriptionLines = description.map(
-                (line, index) => `<text x="36" y="${descriptionY + index * 34}" class="description">${escapeXml(line)}</text>`,
+                (line, index) => `<text x="36" y="${descriptionY + index * 36}" class="description">${escapeXml(line)}</text>`,
               ).join("");
               const titleLines = title.map(
-                (line, index) => `<text x="36" y="${66 + index * 43}" class="title">${escapeXml(line)}</text>`,
+                (line, index) => `<text x="36" y="${72 + index * 47}" class="title">${escapeXml(line)}</text>`,
               ).join("");
               const homepage = repository.homepage
                 ? `<text x="684" y="${descriptionY + 27}" text-anchor="end" class="homepage">Live app ↗</text>`
                 : "";
 
               return [
-                `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="365" viewBox="0 0 720 365" role="img" aria-labelledby="title description">`,
+                `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="385" viewBox="0 0 720 385" role="img" aria-labelledby="title description">`,
                 `  <title id="title">${escapeXml(repository.name)}</title>`,
                 `  <desc id="description">${escapeXml(repository.description || "A lightweight productivity tool from Loose Ends.")}</desc>`,
-                "  <style>.title { fill: #1f2328; font: 700 38px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .description { fill: #30363d; font: 25px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .meta-label { fill: #57606a; font: 700 14px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 21px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .homepage { fill: #0969da; font: 700 18px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }</style>",
-                "  <rect x=\"1\" y=\"1\" width=\"718\" height=\"363\" rx=\"24\" fill=\"#ffffff\" stroke=\"#d0d7de\"/>",
+                "  <style>.title { fill: #1f2328; font: 700 42px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .description { fill: #30363d; font: 27px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .meta-label { fill: #57606a; font: 700 15px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 22px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .homepage { fill: #0969da; font: 700 20px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }</style>",
+                "  <rect x=\"1\" y=\"1\" width=\"718\" height=\"383\" rx=\"24\" fill=\"#ffffff\" stroke=\"#d0d7de\"/>",
+                `  <text x="684" y="36" text-anchor="end" class="meta-label">UPDATED ${updatedDate(repository.updated_at).toUpperCase()}</text>`,
                 `  ${titleLines}`,
                 `  ${descriptionLines}`,
                 `  ${homepage}`,
-                "  <line x1=\"36\" y1=\"258\" x2=\"684\" y2=\"258\" stroke=\"#d8dee4\"/>",
-                `  <circle cx="46" cy="296" r="10" fill="${accent}"/>`,
-                `  <text x="67" y="286" class="meta-label">PRIMARY LANGUAGE</text>`,
-                `  <text x="67" y="316" class="meta-value">${escapeXml(primaryLanguage)}</text>`,
-                `  <text x="280" y="286" class="meta-label">STARS</text>`,
-                `  <text x="280" y="316" class="meta-value">★ ${repository.stargazers_count}</text>`,
-                `  <text x="485" y="286" class="meta-label">PROJECT PULSE</text>`,
-                `  <text x="485" y="316" class="meta-value">${repository.open_issues_count} open issues</text>`,
-                `  <text x="684" y="342" text-anchor="end" class="meta-label">UPDATED ${updatedDate(repository.updated_at).toUpperCase()}</text>`,
-                "  <clipPath id=\"language-bar\"><rect x=\"1\" y=\"355\" width=\"718\" height=\"9\" rx=\"5\"/></clipPath>",
+                "  <line x1=\"36\" y1=\"270\" x2=\"684\" y2=\"270\" stroke=\"#d8dee4\"/>",
+                `  <circle cx="47" cy="312" r="11" fill="${accent}"/>`,
+                `  <text x="70" y="300" class="meta-label">PRIMARY LANGUAGE</text>`,
+                `  <text x="70" y="332" class="meta-value">${escapeXml(primaryLanguage)}</text>`,
+                `  <text x="285" y="300" class="meta-label">STARS</text>`,
+                `  <text x="285" y="332" class="meta-value">★ ${repository.stargazers_count}</text>`,
+                `  <text x="485" y="300" class="meta-label">PROJECT PULSE</text>`,
+                `  <text x="485" y="332" class="meta-value">${repository.open_issues_count} open issues</text>`,
+                "  <clipPath id=\"language-bar\"><rect x=\"1\" y=\"375\" width=\"718\" height=\"9\" rx=\"5\"/></clipPath>",
                 `  <g clip-path="url(#language-bar)">${languageBar}</g>`,
                 "</svg>",
               ].join("\n");
