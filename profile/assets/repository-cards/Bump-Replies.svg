@@ -1,24 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="310" viewBox="0 0 720 310" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="330" viewBox="0 0 720 330" role="img" aria-labelledby="title description">
   <title id="title">Bump-Replies</title>
   <desc id="description">A lightweight productivity tool from Loose Ends.</desc>
-  <style>.eyebrow { fill: #ffffff; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #3d444d; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #6e7781; font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
-  <rect x="1" y="1" width="718" height="308" rx="18" fill="#ffffff" stroke="#d0d7de"/>
-  <rect x="1" y="1" width="718" height="10" rx="4" fill="#f05138"/>
-  <rect x="1" y="10" width="9" height="290" fill="#f05138"/>
+  <style>.eyebrow { fill: #ffffff; font: 700 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 21px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
+  <rect x="1" y="1" width="718" height="328" rx="24" fill="#ffffff" stroke="#d0d7de"/>
   <rect x="36" y="28" width="170" height="28" rx="14" fill="#f05138"/>
   <text x="51" y="47" class="eyebrow">OPEN-SOURCE TOOL</text>
   <text x="36" y="92" class="title">Bump-Replies</text>
-  <text x="36" y="132" class="description">A lightweight productivity tool from Loose Ends.</text>
+  <text x="36" y="139" class="description">A lightweight productivity tool from Loose Ends.</text>
   
-  <line x1="36" y1="205" x2="684" y2="205" stroke="#d8dee4"/>
-  <circle cx="43" cy="237" r="7" fill="#f05138"/>
-  <text x="58" y="233" class="meta-label">PRIMARY LANGUAGE</text>
-  <text x="58" y="254" class="meta-value">Swift</text>
-  <text x="264" y="233" class="meta-label">COMMUNITY</text>
-  <text x="264" y="254" class="meta-value">★ 0   Forks 0</text>
-  <text x="477" y="233" class="meta-label">PROJECT PULSE</text>
-  <text x="477" y="254" class="meta-value">3 issues · 1 languages</text>
-  <text x="684" y="281" text-anchor="end" class="meta-label">UPDATED AUG 20 · SINCE 2026</text>
-  <clipPath id="language-bar"><rect x="1" y="300" width="718" height="9" rx="4"/></clipPath>
-  <g clip-path="url(#language-bar)"><rect x="1" y="300" width="718" height="9" fill="#f05138"/></g>
+  <line x1="36" y1="225" x2="684" y2="225" stroke="#d8dee4"/>
+  <circle cx="44" cy="258" r="8" fill="#f05138"/>
+  <text x="61" y="252" class="meta-label">PRIMARY LANGUAGE</text>
+  <text x="61" y="277" class="meta-value">Swift</text>
+  <text x="270" y="252" class="meta-label">COMMUNITY</text>
+  <text x="270" y="277" class="meta-value">★ 0   Forks 0</text>
+  <text x="480" y="252" class="meta-label">PROJECT PULSE</text>
+  <text x="480" y="277" class="meta-value">3 issues · 1 languages</text>
+  <text x="684" y="304" text-anchor="end" class="meta-label">UPDATED AUG 20 · SINCE 2026</text>
+  <clipPath id="language-bar"><rect x="1" y="320" width="718" height="9" rx="5"/></clipPath>
+  <g clip-path="url(#language-bar)"><rect x="1" y="320" width="718" height="9" fill="#f05138"/></g>
 </svg>
