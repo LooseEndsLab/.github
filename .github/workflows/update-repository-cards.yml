@@ -25,7 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
-            const cardVersion = "10";
+            const cardVersion = "11";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
