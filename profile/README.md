@@ -15,15 +15,15 @@ Loose Ends is a small, open-source collection for follow-ups, reminders, recurri
 
 <!-- repository-cards:start -->
 <a href="https://github.com/LooseEndsLab/Bump-Replies">
-  <img align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=LooseEndsLab&repo=Bump-Replies&theme=transparent&hide_border=true" alt="Bump-Replies repository card" />
+  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Bump-Replies" alt="Bump-Replies repository card" />
 </a>
 &nbsp;
 <a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
-  <img align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=LooseEndsLab&repo=Enhanced-Outlook-UI&theme=transparent&hide_border=true" alt="Enhanced-Outlook-UI repository card" />
+  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Enhanced-Outlook-UI" alt="Enhanced-Outlook-UI repository card" />
 </a>
 <br />
 <a href="https://github.com/LooseEndsLab/Unformat">
-  <img align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=LooseEndsLab&repo=Unformat&theme=transparent&hide_border=true" alt="Unformat repository card" />
+  <img width="49%" src="https://opengraph.githubassets.com/1/LooseEndsLab/Unformat" alt="Unformat repository card" />
 </a>
 <!-- repository-cards:end -->
 

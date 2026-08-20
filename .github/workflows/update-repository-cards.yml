@@ -45,7 +45,7 @@ jobs:
               .map((repository, index) => {
                 const card = [
                   `<a href="${repository.html_url}">`,
-                  `  <img align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=${encodeURIComponent(owner)}&repo=${encodeURIComponent(repository.name)}&theme=transparent&hide_border=true" alt="${repository.name} repository card" />`,
+                  `  <img width="49%" src="https://opengraph.githubassets.com/1/${encodeURIComponent(owner)}/${encodeURIComponent(repository.name)}" alt="${repository.name} repository card" />`,
                   "</a>",
                 ].join("\n");
 
