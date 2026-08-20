@@ -8,9 +8,6 @@
   <strong>Lightweight productivity tools for tying up the loose ends in your digital life.</strong>
 </p>
 
-Built to make follow-ups, reminders, and recurring life admin easier to manage.
-
-
 ## Tools
 
 <!-- repository-cards:start -->
