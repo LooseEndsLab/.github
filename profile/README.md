@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Open-source tools for follow-ups, reminders, and everyday admin.</strong>
+  <strong>Open-source tools for follow-ups, reminders, and life admin.</strong>
 </p>
 
 <p align="center">
