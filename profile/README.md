@@ -13,15 +13,15 @@
 <!-- repository-cards:start -->
 <br />
 <a href="https://github.com/LooseEndsLab/Bump-Replies">
-  <img width="46%" src="./assets/repository-cards/Bump-Replies.svg" alt="Bump-Replies repository card" />
+  <img width="46%" src="./assets/repository-cards/Bump-Replies.svg?v=2" alt="Bump-Replies repository card" />
 </a>
 &nbsp;
 <a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
-  <img width="46%" src="./assets/repository-cards/Enhanced-Outlook-UI.svg" alt="Enhanced-Outlook-UI repository card" />
+  <img width="46%" src="./assets/repository-cards/Enhanced-Outlook-UI.svg?v=2" alt="Enhanced-Outlook-UI repository card" />
 </a>
 <br />
 <a href="https://github.com/LooseEndsLab/Unformat">
-  <img width="46%" src="./assets/repository-cards/Unformat.svg" alt="Unformat repository card" />
+  <img width="46%" src="./assets/repository-cards/Unformat.svg?v=2" alt="Unformat repository card" />
 </a>
 <br />
 <br />
