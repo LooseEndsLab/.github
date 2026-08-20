@@ -25,6 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
+            const cardVersion = "2";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
@@ -160,7 +161,7 @@ jobs:
               .map((repository, index) => {
                 const card = [
                   `<a href="${repository.html_url}">`,
-                  `  <img width="46%" src="./assets/repository-cards/${cardFilename(repository.name)}" alt="${repository.name} repository card" />`,
+                  `  <img width="46%" src="./assets/repository-cards/${cardFilename(repository.name)}?v=${cardVersion}" alt="${repository.name} repository card" />`,
                   "</a>",
                 ].join("\n");
 
