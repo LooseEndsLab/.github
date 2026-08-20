@@ -25,7 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
-            const cardVersion = "6";
+            const cardVersion = "7";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
@@ -102,12 +102,12 @@ jobs:
                 56,
                 2,
               );
-              const descriptionY = title.length === 2 ? 186 : 144;
+              const descriptionY = title.length === 2 ? 150 : 108;
               const descriptionLines = description.map(
                 (line, index) => `<text x="36" y="${descriptionY + index * 31}" class="description">${escapeXml(line)}</text>`,
               ).join("");
               const titleLines = title.map(
-                (line, index) => `<text x="36" y="${96 + index * 40}" class="title">${escapeXml(line)}</text>`,
+                (line, index) => `<text x="36" y="${62 + index * 40}" class="title">${escapeXml(line)}</text>`,
               ).join("");
               const homepage = repository.homepage
                 ? `<text x="684" y="${descriptionY + 27}" text-anchor="end" class="homepage">Live app ↗</text>`
@@ -117,10 +117,8 @@ jobs:
                 `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="345" viewBox="0 0 720 345" role="img" aria-labelledby="title description">`,
                 `  <title id="title">${escapeXml(repository.name)}</title>`,
                 `  <desc id="description">${escapeXml(repository.description || "A lightweight productivity tool from Loose Ends.")}</desc>`,
-                "  <style>.eyebrow { fill: #ffffff; font: 700 14px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 35px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .description { fill: #30363d; font: 23px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .meta-label { fill: #57606a; font: 700 13px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 19px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .homepage { fill: #0969da; font: 700 17px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }</style>",
+                "  <style>.title { fill: #1f2328; font: 700 35px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .description { fill: #30363d; font: 23px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .meta-label { fill: #57606a; font: 700 13px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 19px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; } .homepage { fill: #0969da; font: 700 17px -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }</style>",
                 "  <rect x=\"1\" y=\"1\" width=\"718\" height=\"343\" rx=\"24\" fill=\"#ffffff\" stroke=\"#d0d7de\"/>",
-                `  <rect x="36" y="28" width="170" height="28" rx="14" fill="${accent}"/>`,
-                "  <text x=\"51\" y=\"47\" class=\"eyebrow\">OPEN-SOURCE TOOL</text>",
                 `  ${titleLines}`,
                 `  ${descriptionLines}`,
                 `  ${homepage}`,
@@ -131,7 +129,7 @@ jobs:
                 `  <text x="275" y="267" class="meta-label">COMMUNITY</text>`,
                 `  <text x="275" y="294" class="meta-value">★ ${repository.stargazers_count}   Forks ${repository.forks_count}</text>`,
                 `  <text x="485" y="267" class="meta-label">PROJECT PULSE</text>`,
-                `  <text x="485" y="294" class="meta-value">${repository.open_issues_count} issues · ${languages.length} languages</text>`,
+                `  <text x="485" y="294" class="meta-value">${repository.open_issues_count} open issues</text>`,
                 `  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED ${updatedDate(repository.updated_at).toUpperCase()} · SINCE ${createdYear(repository.created_at)}</text>`,
                 "  <clipPath id=\"language-bar\"><rect x=\"1\" y=\"335\" width=\"718\" height=\"9\" rx=\"5\"/></clipPath>",
                 `  <g clip-path="url(#language-bar)">${languageBar}</g>`,
