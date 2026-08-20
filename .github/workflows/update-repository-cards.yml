@@ -1,0 +1,88 @@
+name: Update repository cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-repository-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Render repository cards
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const path = "profile/README.md";
+            const start = "<!-- repository-cards:start -->";
+            const end = "<!-- repository-cards:end -->";
+
+            const repositories = await github.paginate(
+              github.rest.repos.listForOrg,
+              {
+                org: owner,
+                type: "public",
+                sort: "updated",
+                direction: "desc",
+                per_page: 100,
+              },
+            );
+
+            const projectRepositories = repositories.filter(
+              (repository) => repository.name !== ".github",
+            );
+            const cards = projectRepositories
+              .map((repository, index) => {
+                const card = [
+                  `<a href="${repository.html_url}">`,
+                  `  <img align="top" src="https://github-readme-stats.vercel.app/api/pin/?username=${encodeURIComponent(owner)}&repo=${encodeURIComponent(repository.name)}&theme=transparent&hide_border=true" alt="${repository.name} repository card" />`,
+                  "</a>",
+                ].join("\n");
+
+                return index % 2 === 0
+                  ? `${card}${index === projectRepositories.length - 1 ? "" : "\n&nbsp;"}`
+                  : `${card}\n<br />`;
+              })
+              .join("\n");
+
+            const replacement = `${start}\n${cards || "No public repositories yet."}\n${end}`;
+            const current = await github.rest.repos.getContent({ owner, repo, path });
+
+            if (Array.isArray(current.data) || current.data.type !== "file") {
+              core.setFailed(`${path} is not a file.`);
+              return;
+            }
+
+            const readme = Buffer.from(current.data.content, "base64").toString("utf8");
+            const expression = new RegExp(`${start}[\\s\\S]*?${end}`);
+
+            if (!expression.test(readme)) {
+              core.setFailed("Repository-card markers are missing from the profile README.");
+              return;
+            }
+
+            const updated = readme.replace(expression, replacement);
+
+            if (updated === readme) {
+              core.info("Repository cards are already up to date.");
+              return;
+            }
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo,
+              path,
+              message: "chore: update repository cards",
+              content: Buffer.from(updated).toString("base64"),
+              sha: current.data.sha,
+            });
