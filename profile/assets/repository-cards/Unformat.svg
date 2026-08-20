@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="310" viewBox="0 0 720 310" role="img" aria-labelledby="title description">
   <title id="title">Unformat</title>
   <desc id="description">Clean copy/paste artifacts into useful plain text.</desc>
-  <style>.eyebrow { fill: #57606a; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.2px; } .title { fill: #1f2328; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #3d444d; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #6e7781; font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
+  <style>.eyebrow { fill: #ffffff; font: 700 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1.1px; } .title { fill: #1f2328; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #3d444d; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #6e7781; font: 700 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect x="1" y="1" width="718" height="308" rx="18" fill="#ffffff" stroke="#d0d7de"/>
-  <path d="M18 1h684a18 18 0 0 1 18 18v76H1V19A18 18 0 0 1 18 1Z" fill="#f1e05a" opacity="0.20"/>
-  <rect x="1" y="1" width="718" height="8" rx="4" fill="#f1e05a"/>
-  <text x="36" y="34" class="eyebrow">OPEN-SOURCE TOOL</text>
-  <text x="36" y="64" class="title">Unformat</text>
-  <text x="36" y="104" class="description">Clean copy/paste artifacts into useful plain text.</text>
-  <text x="684" y="131" text-anchor="end" class="homepage">Live app ↗</text>
+  <rect x="1" y="1" width="718" height="10" rx="4" fill="#f1e05a"/>
+  <rect x="1" y="10" width="9" height="290" fill="#f1e05a"/>
+  <rect x="36" y="28" width="170" height="28" rx="14" fill="#f1e05a"/>
+  <text x="51" y="47" class="eyebrow">OPEN-SOURCE TOOL</text>
+  <text x="36" y="92" class="title">Unformat</text>
+  <text x="36" y="132" class="description">Clean copy/paste artifacts into useful plain text.</text>
+  <text x="684" y="159" text-anchor="end" class="homepage">Live app ↗</text>
   <line x1="36" y1="205" x2="684" y2="205" stroke="#d8dee4"/>
   <circle cx="43" cy="237" r="7" fill="#f1e05a"/>
   <text x="58" y="233" class="meta-label">PRIMARY LANGUAGE</text>
