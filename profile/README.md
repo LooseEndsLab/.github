@@ -33,6 +33,6 @@
 
 ## About the collection
 
-Loose Ends is a set of small software projects for tasks that need to be tracked, revisited, or cleaned up. Projects are maintained independently and appear above as they are published.
+Loose Ends is an open-source software suite of small projects for tasks that need to be tracked, revisited, or cleaned up. Projects are maintained independently and appear above as they are published.
 
 Use the cards above to view source code, current project details, and any available live apps.
