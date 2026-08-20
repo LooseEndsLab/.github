@@ -10,11 +10,11 @@
   <circle cx="45" cy="275" r="9" fill="#f05138"/>
   <text x="64" y="267" class="meta-label">PRIMARY LANGUAGE</text>
   <text x="64" y="294" class="meta-value">Swift</text>
-  <text x="275" y="267" class="meta-label">COMMUNITY</text>
-  <text x="275" y="294" class="meta-value">★ 0   Forks 0</text>
+  <text x="275" y="267" class="meta-label">STARS</text>
+  <text x="275" y="294" class="meta-value">★ 0</text>
   <text x="485" y="267" class="meta-label">PROJECT PULSE</text>
   <text x="485" y="294" class="meta-value">3 open issues</text>
-  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED AUG 20 · SINCE 2026</text>
+  <text x="684" y="320" text-anchor="end" class="meta-label">UPDATED AUG 20</text>
   <clipPath id="language-bar"><rect x="1" y="335" width="718" height="9" rx="5"/></clipPath>
   <g clip-path="url(#language-bar)"><rect x="1" y="335" width="718" height="9" fill="#f05138"/></g>
 </svg>
