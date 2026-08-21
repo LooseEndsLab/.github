@@ -25,7 +25,7 @@ jobs:
             const repo = context.repo.repo;
             const path = "profile/README.md";
             const cardsDirectory = "profile/assets/repository-cards";
-            const cardVersion = "14";
+            const cardVersion = "15";
             const start = "<!-- repository-cards:start -->";
             const end = "<!-- repository-cards:end -->";
 
@@ -75,7 +75,7 @@ jobs:
             const updatedDate = (date) => new Intl.DateTimeFormat("en-US", {
               month: "short",
               day: "numeric",
-              timeZone: "UTC",
+              timeZone: "America/Los_Angeles",
             }).format(new Date(date));
 
             const renderCard = (repository) => {
