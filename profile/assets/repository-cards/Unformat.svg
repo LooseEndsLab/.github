@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="385" viewBox="0 0 720 385" role="img" aria-labelledby="title description">
   <title id="title">Unformat</title>
   <desc id="description">Clean copy/paste artifacts into useful plain text.</desc>
-  <style>.title { fill: #1f2328; font: 700 42px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
+  <style>.title { fill: #1f2328; font: 700 42px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
   <rect x="1" y="1" width="718" height="383" fill="#ffffff" stroke="#d0d7de"/>
   <text x="684" y="36" text-anchor="end" class="meta-label">UPDATED AUG 19</text>
   <text x="36" y="72" class="title">Unformat</text>
   <text x="36" y="126" class="description">Clean copy/paste artifacts into useful plain text.</text>
-  <text x="684" y="153" text-anchor="end" class="homepage">Live app ↗</text>
   <line x1="36" y1="270" x2="684" y2="270" stroke="#d8dee4"/>
   <circle cx="47" cy="312" r="11" fill="#f1e05a"/>
   <text x="70" y="300" class="meta-label">PRIMARY LANGUAGE</text>
