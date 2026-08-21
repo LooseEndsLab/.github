@@ -2,7 +2,7 @@
   <title id="title">Unformat</title>
   <desc id="description">Clean copy/paste artifacts into useful plain text.</desc>
   <style>.title { fill: #1f2328; font: 700 42px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .description { fill: #30363d; font: 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .meta-label { fill: #57606a; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: .7px; } .meta-value { fill: #24292f; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; } .homepage { fill: #0969da; font: 700 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }</style>
-  <rect x="1" y="1" width="718" height="383" rx="16" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="1" y="1" width="718" height="383" fill="#ffffff" stroke="#d0d7de"/>
   <text x="684" y="36" text-anchor="end" class="meta-label">UPDATED AUG 19</text>
   <text x="36" y="72" class="title">Unformat</text>
   <text x="36" y="126" class="description">Clean copy/paste artifacts into useful plain text.</text>
@@ -15,6 +15,6 @@
   <text x="285" y="332" class="meta-value">★ 1</text>
   <text x="485" y="300" class="meta-label">PROJECT PULSE</text>
   <text x="485" y="332" class="meta-value">0 open issues</text>
-  <clipPath id="language-bar"><rect x="1" y="375" width="718" height="9" rx="5"/></clipPath>
+  <clipPath id="language-bar"><rect x="1" y="375" width="718" height="9"/></clipPath>
   <g clip-path="url(#language-bar)"><rect x="1" y="375" width="574" height="9" fill="#f1e05a"/><rect x="575" y="375" width="144" height="9" fill="#e34c26"/></g>
 </svg>
