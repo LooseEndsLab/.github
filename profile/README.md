@@ -16,8 +16,8 @@
 
 <!-- repository-cards:start -->
 <br />
-<a href="https://github.com/LooseEndsLab/Bump-Replies">
-  <img width="48%" src="./assets/repository-cards/Bump-Replies.svg?v=15" alt="Bump-Replies repository card" />
+<a href="https://github.com/LooseEndsLab/Spark">
+  <img width="48%" src="./assets/repository-cards/Spark.svg?v=15" alt="Spark repository card" />
 </a>
 &nbsp;
 <a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
