@@ -16,12 +16,12 @@
 
 <!-- repository-cards:start -->
 <br />
-<a href="https://github.com/LooseEndsLab/Spark">
-  <img width="48%" src="./assets/repository-cards/Spark.svg?v=15" alt="Spark repository card" />
-</a>
-&nbsp;
 <a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
   <img width="48%" src="./assets/repository-cards/Enhanced-Outlook-UI.svg?v=15" alt="Enhanced-Outlook-UI repository card" />
+</a>
+&nbsp;
+<a href="https://github.com/LooseEndsLab/Spark">
+  <img width="48%" src="./assets/repository-cards/Spark.svg?v=15" alt="Spark repository card" />
 </a>
 <br />
 <a href="https://github.com/LooseEndsLab/Unformat">
