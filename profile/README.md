@@ -16,17 +16,22 @@
 
 <!-- repository-cards:start -->
 <br />
+<a href="https://github.com/LooseEndsLab/Outlook-Calendar-Event-Injector">
+  <img width="48%" src="./assets/repository-cards/Outlook-Calendar-Event-Injector.svg?v=15" alt="Outlook-Calendar-Event-Injector repository card" />
+</a>
+&nbsp;
 <a href="https://github.com/LooseEndsLab/Enhanced-Outlook-UI">
   <img width="48%" src="./assets/repository-cards/Enhanced-Outlook-UI.svg?v=15" alt="Enhanced-Outlook-UI repository card" />
 </a>
-&nbsp;
+<br />
 <a href="https://github.com/LooseEndsLab/Spark">
   <img width="48%" src="./assets/repository-cards/Spark.svg?v=15" alt="Spark repository card" />
 </a>
-<br />
+&nbsp;
 <a href="https://github.com/LooseEndsLab/Unformat">
   <img width="48%" src="./assets/repository-cards/Unformat.svg?v=15" alt="Unformat repository card" />
 </a>
+<br />
 <br />
 <br />
 <!-- repository-cards:end -->
